@@ -31,6 +31,7 @@ Environment::Environment(Ptr parentEnv) : parent(parentEnv) {}
 
 void Environment::define(const std::string& name, const Value& value) {
     map[name] = value;
+    
 }
 
 bool Environment::set(const std::string& name, const Value& value) {
